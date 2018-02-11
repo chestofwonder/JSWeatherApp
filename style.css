@@ -1,0 +1,52 @@
+
+/* ********** STYLE ********** */
+
+/*Header*/
+
+.title h1{
+	font-size: 4em;
+}
+
+.logo{padding: 35px;}
+
+#search{
+	padding-top: 50px;
+}
+
+.geo-group{
+	padding: 10px 0 0 0;
+}
+
+.search-input{padding: 5px 0 8px 0;}
+.search-input, .geo{margin: 0 5px;}
+
+.container{max-width: 100%;}
+.btn {
+	border: 0;
+	padding: 10px 15px;
+	font-size: 15px;
+	border-radius: 0;
+}
+
+.pb10{padding-bottom: 10px;}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
