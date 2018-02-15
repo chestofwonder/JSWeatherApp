@@ -1,0 +1,25 @@
+{
+  "name": "jsweatherapp",
+  "version": "1.0.0",
+  "description": "A simple weather web app",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chestofwonder/JSWeatherApp.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "rubenzc & chestofwonder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chestofwonder/JSWeatherApp/issues"
+  },
+  "homepage": "https://github.com/chestofwonder/JSWeatherApp#readme",
+  "devDependencies": {
+    "express": "^4.16.2"
+  }
+}
