@@ -18,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/chestofwonder/JSWeatherApp/issues"
   },
-  "homepage": "https://github.com/chestofwonder/JSWeatherApp#readme",
-  "devDependencies": {
-    "express": "^4.16.2"
-  }
+  "homepage": "https://github.com/chestofwonder/JSWeatherApp#readme"
 }
