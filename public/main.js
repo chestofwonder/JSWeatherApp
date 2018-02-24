@@ -1,4 +1,7 @@
 function makeSearch() {
+
+  var search = document.getElementById('search-weather').value;
+
   var xhttp = new XMLHttpRequest();
 
   xhttp.onreadystatechange = function() {
@@ -7,7 +10,8 @@ function makeSearch() {
       xhttp.responseText;
     }
   };
-  xhttp.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=d479ad0f8014dde7cec0cebc52be0781', true);
+  //xhttp.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=d479ad0f8014dde7cec0cebc52be0781', true);
+  xhttp.open('GET', "http://api.openweathermap.org/data/2.5/weather?q=" + search + "&mode=html&APPID=d479ad0f8014dde7cec0cebc52be0781", true);
   xhttp.send();
 }
 
@@ -27,8 +31,8 @@ function geoCurrent() {
 
 function showPosition(position) {
 	
-	latCoord = (position.coords.latitude);
-  longCoord = (position.coords.longitude);
+	var latCoord = (position.coords.latitude);
+  var longCoord = (position.coords.longitude);
 
   //Call to API sending coords
   var xhttp = new XMLHttpRequest();
