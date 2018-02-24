@@ -1,18 +1,28 @@
 function makeSearch() {
 
   var search = document.getElementById('search-weather').value;
+  var check = document.getElementById('search-weather');
 
-  var xhttp = new XMLHttpRequest();
+  if (!check.checkValidity()){
 
-  xhttp.onreadystatechange = function() {
-    if (xhttp.readyState == 4) {
-      document.getElementById("search").innerHTML =
-      xhttp.responseText;
-    }
-  };
-  //xhttp.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=d479ad0f8014dde7cec0cebc52be0781', true);
-  xhttp.open('GET', "http://api.openweathermap.org/data/2.5/weather?q=" + search + "&mode=html&APPID=d479ad0f8014dde7cec0cebc52be0781", true);
-  xhttp.send();
+    var error = document.getElementById("error-form").innerHTML = check.validationMessage;
+    document.getElementById('search-weather').style.border = '2px solid red';
+  
+  }else{
+    
+    var xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function() {
+      if (xhttp.readyState == 4) {
+        document.getElementById("search").innerHTML =
+        xhttp.responseText;
+      }
+    };
+    //xhttp.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=d479ad0f8014dde7cec0cebc52be0781', true);
+    xhttp.open('GET', "http://api.openweathermap.org/data/2.5/weather?q=" + search + "&mode=html&APPID=d479ad0f8014dde7cec0cebc52be0781", true);
+    xhttp.send();
+
+  }
 }
 
 
