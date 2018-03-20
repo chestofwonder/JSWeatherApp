@@ -4,7 +4,10 @@
   "description": "A simple weather web app",
   "main": "index.html",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "e2e-setup": "selenium-standalone install",
+    "e2e-launch": "selenium-standalone start",
+    "test": "./node_modules/nightwatch/bin/nightwatch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/chestofwonder/JSWeatherApp/issues"
   },
-  "homepage": "https://github.com/chestofwonder/JSWeatherApp#readme"
+  "homepage": "https://github.com/chestofwonder/JSWeatherApp#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "nightwatch": "^0.9.19",
+    "selenium-standalone": "^6.13.0"
+  }
 }
